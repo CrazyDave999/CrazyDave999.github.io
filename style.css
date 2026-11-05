@@ -48,3 +48,5 @@ p { margin: .55rem 0; }
   .entry p { margin-bottom: 0; }
   .portrait { width: 88px; height: 104px; margin-left: .75rem; }
 }
+
+#manuscripts article + article { margin-top: 1.5rem; }
