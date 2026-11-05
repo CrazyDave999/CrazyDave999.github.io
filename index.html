@@ -3,64 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jinbin Luo studies efficient and scalable LLM inference at Shanghai Jiao Tong University. Research, publications, and systems projects.">
-  <title>Jinbin Luo · Academic homepage</title>
+  <meta name="description" content="Jinbin Luo, a computer science undergraduate at Shanghai Jiao Tong University researching efficient large language model inference.">
+  <title>Jinbin Luo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header><nav aria-label="Sections"><a class="wordmark" href="#main">Jinbin Luo</a><div><a href="#research">Research</a><a href="#experience">Experience</a><a href="#projects">Projects</a></div></nav></header>
-  <main id="main">
-    <section class="intro" aria-labelledby="name">
-      <!-- Optional portrait: upload assets/portrait.jpg and uncomment the next line. -->
-      <!-- <img class="portrait" src="assets/portrait.jpg" alt="Jinbin Luo" width="144" height="168"> -->
-      <div class="bio">
-        <h1 id="name">Jinbin Luo</h1>
-        <p class="affiliation">Computer Science &amp; Technology · Shanghai Jiao Tong University</p>
-        <p>I am an undergraduate in the <a href="https://acm.sjtu.edu.cn/home">ACM Honor Class</a> at Shanghai Jiao Tong University. I study how to serve large language models efficiently, with a focus on inference systems and how they scale.</p>
-        <p>I have worked with <a href="https://hanlab.mit.edu/songhan">Prof. Song Han</a> at MIT and <a href="https://www.cs.sjtu.edu.cn/~chen-quan/">Prof. Quan Chen</a> at SJTU.</p>
-        <div class="contact"><a href="mailto:luojinbin@sjtu.edu.cn">luojinbin@sjtu.edu.cn</a><a href="https://github.com/CrazyDave999">GitHub</a><a href="assets/CV.pdf">CV (PDF)</a></div>
-      </div>
-    </section>
+  <main>
+    <header class="profile">
+      <img class="portrait" src="assets/portrait.jpg" alt="Jinbin Luo" width="156" height="156">
+      <h1>Jinbin Luo</h1>
+      <p>I am a computer science undergraduate in the <a href="https://acm.sjtu.edu.cn/home">ACM Honors Class</a> at Shanghai Jiao Tong University. My research focuses on systems for large language model inference, particularly how to serve these models efficiently at scale.</p>
+      <p>In summer 2026, I interned at the <a href="https://hanlab.mit.edu/">MIT HAN Lab</a>, where <a href="https://hanlab.mit.edu/songhan">Prof. Song Han</a> advised me and <a href="https://tonyhao.xyz/">Qinghao Hu</a> mentored me. Previously, I worked with <a href="https://www.cs.sjtu.edu.cn/~chen-quan/">Prof. Quan Chen</a> at SJTU’s EPCC Lab.</p>
+      <nav aria-label="Contact and profiles">
+        <a href="mailto:luojinbin@sjtu.edu.cn">luojinbin@sjtu.edu.cn</a>
+        <a href="https://github.com/CrazyDave999">GitHub</a>
+        <a href="assets/CV.pdf">CV (PDF)</a>
+      </nav>
+    </header>
     <section id="research">
-      <h2>Publications</h2>
+      <h2>Selected Publications</h2>
       <article>
-        <p class="meta">MLSys 2026</p>
-        <h3>DynaFlow: Transparent and Flexible Intra-Device Parallelism via Programmable Operator Scheduling</h3>
-        <p class="authors">Yi Pan, Yile Gu, <strong>Jinbin Luo</strong>, Yibo Wu, Ziren Wang, Hongtao Zhang, Ziyi Xu, Shengkai Lin, Baris Kasikci, and Stephanie Wang</p>
-        <p>DynaFlow lets developers change how operators run on a device while keeping the model definition separate from its execution schedule.</p>
-        <div class="links"><a href="https://proceedings.mlsys.org/paper_files/paper/2026/hash/bbd7d8bd780fcf7143add2317ba04638-Abstract-Conference.html">Proceedings</a><a href="https://proceedings.mlsys.org/paper_files/paper/2026/file/bbd7d8bd780fcf7143add2317ba04638-Paper-Conference.pdf">Paper (PDF)</a><a href="https://github.com/uw-syfi/DynaFlow">Code</a></div>
+        <a class="venue" href="https://proceedings.mlsys.org/paper_files/paper/2026/hash/bbd7d8bd780fcf7143add2317ba04638-Abstract-Conference.html">MLSys ’26</a>
+        <div>
+          <h3><a href="https://arxiv.org/abs/2605.21603">DynaFlow: Transparent and Flexible Intra-Device Parallelism via Programmable Operator Scheduling</a></h3>
+          <p class="authors">Yi Pan, Yile Gu, <strong>Jinbin Luo</strong>, Yibo Wu, Ziren Wang, Hongtao Zhang, Ziyi Xu, Shengkai Lin, Baris Kasikci, and Stephanie Wang</p>
+          <a class="code" href="https://github.com/uw-syfi/DynaFlow">Code</a>
+        </div>
       </article>
     </section>
-    <section id="manuscripts">
-      <h2>Manuscripts under review</h2>
-      <article>
-        <p class="meta">Under review at MLSys 2027</p>
-        <h3>CacheTide: Transparent Cache Management and Layer-Wise Streaming for Hybrid LLM Serving</h3>
-        <p class="authors"><strong>Jinbin Luo</strong>, Xiaozhe Yao, Shang Yang, Zhijian Liu, Song Han, and Qinghao Hu</p>
-      </article>
-      <article>
-        <p class="meta">Under review at MLSys 2027</p>
-        <h3>MoS: Seamless Hybrid Scaling for Cost-Efficient MoE Inference</h3>
-        <p class="authors">Junxiao Deng*, <strong>Jinbin Luo*</strong>, Weihao Cui, Han Zhao, Siyuan Feng, Ao Xu, Quan Chen, and Minyi Guo</p>
-        <p class="authors">* Equal contribution (co-first authors).</p>
-      </article>
-    </section>
-    <section id="experience">
-      <h2>Research experience</h2>
-      <div class="entry"><div><h3>MIT Han Lab</h3><p>Research intern with Prof. Song Han · Cambridge, MA</p></div><span>Jul–Sep 2026</span></div>
-      <div class="entry"><div><h3>SJTU EPCC Lab</h3><p>Research intern with Prof. Quan Chen · Shanghai, China</p></div><span>Jul 2025–Jul 2026</span></div>
-    </section>
-    <section id="projects">
-      <h2>Selected projects</h2>
-      <div class="projects">
-        <article><h3><a href="https://github.com/CrazyDave999/acore">ACore OS</a></h3><p>I implemented system calls, user libraries, a shell, and a basic file system for a Unix-like RV64GC microkernel.</p></article>
-        <article><h3><a href="https://github.com/CrazyDave999/RVM">LLVM JIT Compiler</a></h3><p>I built a virtual machine for LLVM IR on 64-bit RISC-V. It interprets IR and dynamically compiles frequently executed basic blocks.</p></article>
-        <article><h3><a href="https://github.com/CrazyDave999/Thunder">Thunder CPU</a></h3><p>I implemented an out-of-order RV32IC processor in Verilog with Tomasulo’s algorithm, an instruction cache, and a branch predictor.</p></article>
-        <article><h3><a href="https://github.com/CrazyDave999/Compiler-2024">Mx* Compiler</a></h3><p>I built a compiler from Mx* to RV32I assembly in Rust, with optimizations including inlining, constant propagation, and register allocation.</p></article>
-      </div>
-    </section>
-    <section id="education"><h2>Education</h2><div class="entry"><div><h3>Shanghai Jiao Tong University</h3><p>B.Eng. in Computer Science &amp; Technology, ACM Honor Class</p></div><span>Expected Jun 2027</span></div></section>
   </main>
 </body>
 </html>
