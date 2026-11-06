@@ -47,3 +47,5 @@ section + section { margin-top: 36px; padding-top: 28px; border-top: 1px solid #
   .education { gap: 16px; align-items: start; }
   .education img { width: 56px; height: 56px; flex-basis: 56px; }
 }
+
+.education + .education { margin-top: 24px; }

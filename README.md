@@ -16,6 +16,6 @@
 
 ## 图像与搜索配置
 
-三篇 overview 分别提取自对应论文的 Figure 4。校徽图像来自 https://xingyangli.com/images/sjtu.png。照片位于 assets/portrait.jpg，论文缩略图位于 assets/*-overview.png。
+三篇 overview 分别提取自对应论文的 Figure 4。校徽图像来自 https://xingyangli.com/images/sjtu.png 和 https://xingyangli.com/images/mit.png。照片位于 assets/portrait.jpg，论文缩略图位于 assets/*-overview.png。
 
 网页标题、描述、canonical 和 ProfilePage 结构化数据在 index.html 的 head 中。robots.txt 允许抓取并指向 sitemap.xml。可在 Google Search Console 添加 URL 前缀属性 https://crazydave999.github.io/，验证后通过 URL Inspection 请求收录，并提交 sitemap.xml。
