@@ -3,34 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jinbin Luo, a computer science undergraduate at Shanghai Jiao Tong University researching efficient large language model inference.">
-  <title>Jinbin Luo</title>
+  <title>Jinbin Luo | Shanghai Jiao Tong University | ML Systems</title>
+  <meta name="description" content="Jinbin Luo is a computer science undergraduate at Shanghai Jiao Tong University researching efficient and scalable LLM inference. Applying for PhD programs for Fall 2027.">
+  <link rel="canonical" href="https://crazydave999.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Jinbin Luo | ML Systems">
+  <meta property="og:description" content="Computer science undergraduate at SJTU. Efficient and scalable LLM inference. Applying for Fall 2027 PhD programs.">
+  <meta property="og:url" content="https://crazydave999.github.io/">
+  <meta property="og:image" content="https://crazydave999.github.io/assets/portrait.jpg">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfilePage","url":"https://crazydave999.github.io/","mainEntity":{"@type":"Person","name":"Jinbin Luo","url":"https://crazydave999.github.io/","image":"https://crazydave999.github.io/assets/portrait.jpg","affiliation":{"@type":"CollegeOrUniversity","name":"Shanghai Jiao Tong University"},"sameAs":["https://github.com/CrazyDave999"]}}
+  </script>
 </head>
 <body>
-  <main>
-    <header class="profile">
-      <img class="portrait" src="assets/portrait.jpg" alt="Jinbin Luo" width="156" height="156">
+  <a class="skip" href="#about">Skip to content</a>
+  <div class="layout">
+    <aside class="profile" aria-label="Personal information">
+      <img class="portrait" src="assets/portrait.jpg" alt="Jinbin Luo" width="180" height="180">
       <h1>Jinbin Luo</h1>
-      <p>I am a computer science undergraduate in the <a href="https://acm.sjtu.edu.cn/home">ACM Honors Class</a> at Shanghai Jiao Tong University. My research focuses on systems for large language model inference, particularly how to serve these models efficiently at scale.</p>
-      <p>In summer 2026, I interned at the <a href="https://hanlab.mit.edu/">MIT HAN Lab</a>, where <a href="https://hanlab.mit.edu/songhan">Prof. Song Han</a> advised me and <a href="https://tonyhao.xyz/">Qinghao Hu</a> mentored me. Previously, I worked with <a href="https://www.cs.sjtu.edu.cn/~chen-quan/">Prof. Quan Chen</a> at SJTU’s EPCC Lab.</p>
-      <nav aria-label="Contact and profiles">
+      <p class="role">Computer Science Undergraduate</p>
+      <p class="institution">Shanghai Jiao Tong University<br>ACM Honors Class</p>
+      <nav class="contact" aria-label="Contact and profiles">
         <a href="mailto:luojinbin@sjtu.edu.cn">luojinbin@sjtu.edu.cn</a>
-        <a href="https://github.com/CrazyDave999">GitHub</a>
-        <a href="assets/CV.pdf">CV (PDF)</a>
+        <div><a href="https://github.com/CrazyDave999">GitHub</a><a href="assets/CV.pdf">CV (PDF)</a></div>
       </nav>
-    </header>
-    <section id="research">
-      <h2>Selected Publications</h2>
-      <article>
-        <a class="venue" href="https://proceedings.mlsys.org/paper_files/paper/2026/hash/bbd7d8bd780fcf7143add2317ba04638-Abstract-Conference.html">MLSys ’26</a>
-        <div>
-          <h3><a href="https://arxiv.org/abs/2605.21603">DynaFlow: Transparent and Flexible Intra-Device Parallelism via Programmable Operator Scheduling</a></h3>
-          <p class="authors">Yi Pan, Yile Gu, <strong>Jinbin Luo</strong>, Yibo Wu, Ziren Wang, Hongtao Zhang, Ziyi Xu, Shengkai Lin, Baris Kasikci, and Stephanie Wang</p>
-          <a class="code" href="https://github.com/uw-syfi/DynaFlow">Code</a>
-        </div>
-      </article>
-    </section>
-  </main>
+    </aside>
+    <main>
+      <section id="about" aria-label="About me">
+        <p>I am a computer science undergraduate in the <a href="https://acm.sjtu.edu.cn/home">ACM Honors Class</a> at Shanghai Jiao Tong University, expecting to graduate in June 2027. In summer 2026, I was a research intern at <a href="https://hanlab.mit.edu/">MIT HAN Lab</a>, advised by <a href="https://hanlab.mit.edu/songhan">Prof. Song Han</a> and mentored by <a href="https://tonyhao.xyz/">Qinghao Hu</a>. Previously, I worked with <a href="https://www.cs.sjtu.edu.cn/~chen-quan/">Prof. Quan Chen</a> at SJTU’s EPCC Lab.</p>
+        <p>My research interests lie in machine learning systems, with a focus on efficient and scalable inference for large language models. I am particularly interested in memory management and parallel execution for improving the performance and resource efficiency of LLM serving.</p>
+        <p>I am applying to <strong>PhD programs starting in Fall 2027</strong>. I would be happy to discuss potential research fit and collaboration opportunities. Please feel free to <a href="mailto:luojinbin@sjtu.edu.cn">get in touch</a>.</p>
+      </section>
+      <section id="research">
+        <h2>Publications &amp; Manuscripts</h2>
+        <article class="publication">
+          <img class="overview" src="assets/cachetide-overview.png" alt="CacheTide overview showing the transparent cache pool, request scheduler, inference engine, and cache streamer" width="1359" height="459">
+          <div>
+            <p class="venue">Manuscript · 2026</p>
+            <h3>CacheTide: Transparent Cache Management and Layer-Wise Streaming for Hybrid LLM Serving</h3>
+            <p class="authors"><strong>Jinbin Luo</strong>, Xiaozhe Yao, Shang Yang, Zhijian Liu, Song Han, and Qinghao Hu</p>
+          </div>
+        </article>
+        <article class="publication">
+          <img class="overview" src="assets/mos-overview.png" alt="MoS overview showing the hybrid scaling controller, virtualized runtime pool, and seamless instance reconfigurator" width="711" height="480">
+          <div>
+            <p class="venue">Manuscript · 2026</p>
+            <h3>MoS: Seamless Hybrid Scaling for Cost-Efficient MoE Inference</h3>
+            <p class="authors">Junxiao Deng*, <strong>Jinbin Luo*</strong>, Weihao Cui, Han Zhao, Siyuan Feng, Ao Xu, Quan Chen, and Minyi Guo</p>
+            <p class="note">* Equal contribution.</p>
+          </div>
+        </article>
+        <article class="publication">
+          <img class="overview" src="assets/dynaflow-overview.png" alt="DynaFlow overview showing transparent integration, efficient runtime, and unified intra-device parallelism" width="1251" height="501">
+          <div>
+            <p class="venue">MLSys 2026</p>
+            <h3><a href="https://arxiv.org/abs/2605.21603">DynaFlow: Transparent and Flexible Intra-Device Parallelism via Programmable Operator Scheduling</a></h3>
+            <p class="authors">Yi Pan, Yile Gu, <strong>Jinbin Luo</strong>, Yibo Wu, Ziren Wang, Hongtao Zhang, Ziyi Xu, Shengkai Lin, Baris Kasikci, and Stephanie Wang</p>
+            <div class="links"><a href="https://arxiv.org/abs/2605.21603">Paper</a><a href="https://github.com/uw-syfi/DynaFlow">Code</a><a href="https://proceedings.mlsys.org/paper_files/paper/2026/hash/bbd7d8bd780fcf7143add2317ba04638-Abstract-Conference.html">Proceedings</a></div>
+          </div>
+        </article>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <article class="education">
+          <img src="assets/sjtu.png" alt="Shanghai Jiao Tong University emblem" width="72" height="72">
+          <div><h3>Shanghai Jiao Tong University</h3>
+            <p>B.Eng. in Computer Science &amp; Technology · ACM Honors Class</p>
+            <p class="note">Sep 2023 – Jun 2027 (expected)</p>
+            <p class="note">Core GPA 3.96/4.30 · Rank 5/27</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

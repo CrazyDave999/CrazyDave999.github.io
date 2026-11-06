@@ -1,30 +1,49 @@
-:root {
-  color-scheme: light;
-  --ink: #202a30;
-  --link: #175e65;
-}
+:root { color-scheme: light; --ink: #29323a; --muted: #667078; --link: #176479; }
 * { box-sizing: border-box; }
-body { margin: 0; background: #fff; color: var(--ink); font: 1rem/1.68 system-ui, sans-serif; }
-main { max-width: 52rem; margin: auto; padding: clamp(2rem, 7vw, 5rem) 1.5rem 4rem; }
-h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; line-height: 1.2; font-weight: 500; }
-h1 { margin: 0 0 1.25rem; font-size: clamp(2.5rem, 6vw, 3.4rem); letter-spacing: -.04em; }
-h2 { margin: 0 0 1.4rem; font-size: 1.85rem; letter-spacing: -.025em; }
-h3 { margin: 0; font-size: 1.25rem; line-height: 1.4; }
-p { margin: 0 0 .85rem; }
-a { color: var(--link); text-underline-offset: .18em; text-decoration-thickness: 1px; }
-a:hover { color: #09393d; }
-a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
-.profile { display: flow-root; }
-.portrait { float: right; width: clamp(7rem, 20vw, 9.75rem); height: auto; margin: 0 0 1rem 2rem; border-radius: 5px; }
-nav { display: flex; flex-wrap: wrap; gap: .25rem 1.15rem; font-size: .94rem; }
-section { margin-top: 2.4rem; border-top: 1px solid #d9dfe0; padding-top: 1.7rem; }
-article { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 1.4rem; }
-.venue { font-size: .87rem; font-weight: 600; white-space: nowrap; }
-.authors, .code { font-size: .93rem; }
-.authors { margin: .4rem 0 .2rem; }
-@media (max-width: 580px) {
-  main { padding-inline: 1.2rem; }
-  .portrait { width: 5rem; margin: 0 0 .6rem 1rem; }
-  h1 { min-height: 5rem; display: flex; align-items: center; }
-  article { grid-template-columns: 1fr; gap: .35rem; }
+html { scroll-padding-top: 2rem; }
+body { margin: 0; background: #fff; color: var(--ink); font: 15px/1.75 system-ui, sans-serif; }
+.layout { display: grid; grid-template-columns: 225px minmax(0, 1fr); gap: 64px; max-width: 1180px; margin: auto; padding: 68px 36px 80px; }
+.profile { position: sticky; top: 48px; align-self: start; max-height: calc(100dvh - 72px); overflow-y: auto; }
+.portrait { width: 180px; height: 180px; object-fit: cover; border-radius: 6px; }
+h1, h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; line-height: 1.25; }
+h1 { font-size: 34px; margin: 20px 0 10px; letter-spacing: -.035em; }
+h2 { font-size: 27px; margin: 0 0 28px; letter-spacing: -.025em; }
+h3 { font-size: 16px; font-weight: 600; line-height: 1.5; margin: 0 0 6px; }
+p { margin: 0 0 15px; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 16px; top: 8px; }
+.role, .institution { font-size: 13px; color: var(--muted); margin: 0 0 10px; }
+.contact { font-size: 13px; margin-top: 20px; }
+.contact div, .links { display: flex; flex-wrap: wrap; gap: 16px; }
+.contact div { margin-top: 7px; }
+section + section { margin-top: 36px; padding-top: 28px; border-top: 1px solid #e6eaec; }
+.publication { display: grid; grid-template-columns: 220px minmax(0, 1fr); align-items: center; gap: 24px; margin-bottom: 32px; }
+.publication:last-child { margin-bottom: 0; }
+.overview { width: 100%; height: auto; max-height: 175px; object-fit: contain; }
+.venue { color: var(--link); font-size: 12px; font-weight: 600; margin-bottom: 5px; }
+.authors, .links { font-size: 13px; line-height: 1.65; margin-bottom: 5px; }
+.note { color: var(--muted); font-size: 12px; margin-bottom: 3px; }
+.education { display: flex; align-items: center; gap: 24px; }
+.education img { object-fit: contain; flex: 0 0 72px; }
+.education p { margin-bottom: 4px; font-size: 13px; }
+@media (max-width: 1000px) {
+  .layout { gap: 36px; grid-template-columns: 200px minmax(0, 1fr); padding-inline: 24px; }
+  .publication { grid-template-columns: 165px minmax(0, 1fr); gap: 18px; }
+}
+@media (max-width: 760px) {
+  .layout { display: block; padding: 32px 22px 48px; }
+  .profile { position: static; max-height: none; overflow: visible; margin-bottom: 36px; display: flow-root; }
+  .portrait { float: right; width: 108px; height: 108px; margin: 0 0 16px 18px; }
+  h1 { margin-top: 0; }
+  .publication { grid-template-columns: 180px minmax(0, 1fr); }
+}
+@media (max-width: 540px) {
+  .publication { grid-template-columns: 1fr; gap: 14px; }
+  .overview { width: min(100%, 300px); max-height: 190px; justify-self: start; }
+  h2 { font-size: 25px; }
+  .education { gap: 16px; align-items: start; }
+  .education img { width: 56px; height: 56px; flex-basis: 56px; }
 }
